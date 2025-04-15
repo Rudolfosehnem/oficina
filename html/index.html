@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem de Serviço</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+
+        <div class="container">
+            <h1>Formulário de Contrato</h1>
+            <form id="formOrdemServico">
+
+                <div class="form-section">
+                    <h2>Informações do Cliente</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nomeCliente">Nome Completo:</label>
+                            <input type="text" id="nomeCliente" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone:</label>
+                            <input type="tel" id="telefone" pattern="[0-9]{11}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Dados Segundários</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="veiculoMarca">Endereço</label>
+                            <input type="text" id="veiculoMarca" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="veiculoModelo">Cpf</label>
+                            <input type="number" id="veiculoModelo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="veiculoAno">Estado civil</label>
+                            <form action="/action_page.php"></form>
+                                
+                                <select id="cars" name="cars">
+                                  <option value="volvo">Solteiro</option>
+                                  <option value="saab">Namorando</option>
+                                  <option value="fiat">Casado</option>
+                                  <option value="audi">Viuvo</option>
+                                </select>
+                                
+                              </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Diga o por que voce merece essa vaga?</h2>
+                    <div class="form-row">
+                       
+                    <div class="form-group">
+                        <label for="descricao">Por que voce merece ser contratado</label>
+                        <textarea id="descricao" rows="4" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="newsletter">
+                        <label for="newsletter">Quando sair a respota sobre sua contração deseja ser notificado?</label>
+                    </div>
+                </div>
+
+                <button type="submit">Enviar Ordem</button>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
